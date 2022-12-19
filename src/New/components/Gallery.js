@@ -1,5 +1,5 @@
 import React from 'react'
-import img from "../images/images/project-4.jpg"
+import img from "../images/project-4.jpg"
 import "../style/gallery.scss"
 import { FaFacebookF } from "react-icons/fa"
 import { BsTwitter, BsInstagram, BsYoutube } from "react-icons/bs"

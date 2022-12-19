@@ -1,6 +1,6 @@
 import React from 'react'
 import "../style/team.scss"
-import img from "../images/images/team-3.jpg"
+import img from "../images/team-3.jpg"
 import {FaFacebookF} from "react-icons/fa"
 import {BsTwitter,BsInstagram,BsYoutube} from "react-icons/bs"
 function Team() {

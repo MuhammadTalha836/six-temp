@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import '../style/about.scss'
-import img from '../images/images/about-img.png'
-import imgSm from "../images/images/about-sm.png"
+import img from '../images/about-img.png'
+import imgSm from "../images/about-sm.png"
 function About() {
 
 

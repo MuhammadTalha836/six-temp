@@ -1,7 +1,7 @@
 import React from 'react'
 import '../style/Services.scss'
 import { FaBriefcaseMedical } from 'react-icons/fa';
-import midImg from '../images/about (1).jpg'
+
 
 function Services() {
   return (
