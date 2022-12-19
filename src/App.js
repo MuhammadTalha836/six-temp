@@ -10,6 +10,7 @@ import Services from './New/components/Services';
 import Contact from './New/components/Contact';
 import Table from './New/components/Team';
 import Team from './New/components/Team';
+import Facts from './New/components/Facts';
 
 
 function App() {
@@ -42,8 +43,8 @@ function App() {
      <Home/>
      <Services/>
      <About/>
-   
      <Gallery/>
+     <Facts/>
      <Team/>
      <Contact/>
       </div>

@@ -25,49 +25,121 @@
 
     .team-cards {
         display: flex;
-        justify-content: space-between;
-        .card {
-            width: 350px;
+        justify-content: space-evenly;
+
+        .wrapper {
             height: 400px;
-            cursor: pointer;
-            border: 0;
+            width: 320px;
+            position: relative;
+            transform-style: preserve-3d;
+            perspective: 1000px;
             margin: 0px 20px;
-
-            img {
-                width: 350px;
-                height: 400px;
-            }
         }
 
-        .card:hover {
-
-            box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+        .wrapper .card {
+            position: absolute;
+            height: 100%;
+            width: 100%;
+            padding: 5px;
+            background: #fff;
+            border-radius: 10px;
+            transform: translateY(0deg);
+            transform-style: preserve-3d;
+            backface-visibility: hidden;
+            box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.1);
+            transition: transform 0.7s cubic-bezier(0.4, 0.2, 0.2, 1);
         }
+
+        .wrapper:hover>.front-face {
+            transform: rotateY(-180deg);
+        }
+
+        .wrapper .card img {
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+            border-radius: 10px;
+        }
+
+        .wrapper .back-face {
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+            flex-direction: column;
+            transform: rotateY(180deg);
+        }
+
+        .wrapper:hover>.back-face {
+            transform: rotateY(0deg);
+        }
+
+        .wrapper .back-face img {
+            height: 150px;
+            width: 150px;
+            padding: 5px;
+            border-radius: 50%;
+            background: linear-gradient(375deg, #104cba, #001c50);
+        }
+
+        .wrapper .back-face .info {
+            text-align: center;
+        }
+
+        .back-face .info .title {
+            font-size: 30px;
+            font-weight: 500;
+        }
+
+        .back-face ul {
+            display: flex;
+        }
+
+        .back-face ul a {
+            display: block;
+            height: 40px;
+            width: 40px;
+            color: #fff;
+            text-align: center;
+            margin: 0 5px;
+            line-height: 38px;
+            border: 2px solid transparent;
+            border-radius: 50%;
+            background: linear-gradient(375deg, #104cba, #285ab6);
+            transition: all 0.5s ease;
+        }
+
+        .back-face ul a:hover {
+            color: #104cba;
+            border-color: #104cba;
+            background: linear-gradient(375deg, transparent, transparent);
+        }
+
     }
 
 
-    @media screen and (max-width:1200px){
+    @media screen and (max-width:1200px) {
         .team-cards {
-          
-            .card {
-                width: 250px;
-                height: 300px;
-              
-    
-                img {
-                    width: 250px;
-                    height: 300px;
-                }
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+            .wrapper {
+                height: 500px;
+                width: 720px;
+                position: relative;
+                transform-style: preserve-3d;
+                perspective: 1000px;
+                margin: 20px 0px !important;
             }
         }
     }
 
 
-    @media screen and (max-width:850px){
+    @media screen and (max-width:850px) {
 
         .team-content {
             text-align: center;
-    
+
             h1 {
                 font-size: 30px;
                 font-weight: bold;
@@ -76,37 +148,34 @@
         }
 
         .team-cards {
-          flex-direction: column;
-          justify-content: center;
-          align-items: center;
-            .card {
-                width: 450px;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+            .wrapper {
                 height: 400px;
-                cursor: pointer;
-                border: 0;
-                margin: 15px 20px;
-    
-                img {
-                    width: 450px;
-                    height: 400px;
-                }
+                width: 520px;
+                position: relative;
+                transform-style: preserve-3d;
+                perspective: 1000px;
+                margin: 20px 0px !important;
             }
-    
+
         }
     }
 
-    @media screen and (max-width:500px){
+    @media screen and (max-width:500px) {
         .team-content {
             text-align: center;
-    
+
             span {
                 background-color: #104cba;
                 color: white;
                 text-transform: uppercase;
                 padding: 10px 20px;
-    
+
             }
-    
+
             h1 {
                 font-size: 20px;
                 font-weight: bold;
@@ -118,20 +187,17 @@
             flex-direction: column;
             justify-content: center;
             align-items: center;
-              .card {
-                  width: 350px;
-                  height: 400px;
-                  cursor: pointer;
-                  border: 0;
-                  margin: 15px 20px;
-      
-                  img {
-                      width: 350px;
-                      height: 400px;
-                  }
-              }
-      
-          }
+
+            .wrapper {
+                height: 300px;
+                width: 350px;
+                position: relative;
+                transform-style: preserve-3d;
+                perspective: 1000px;
+                margin: 20px 0px !important;
+            }
+
+        }
 
 
     }

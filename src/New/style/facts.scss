@@ -1,0 +1,23 @@
+// for background image
+.facts {
+    min-height: 50vh;
+    width: 100%;
+    background: #104cba fixed no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    @media screen and (max-width:600px) {
+
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        
+            #cardCenter{
+                margin:auto
+            }
+        }
+    }
+}

@@ -1,6 +1,9 @@
 import React from 'react'
 import img from "../images/images/project-4.jpg"
 import "../style/gallery.scss"
+import { FaFacebookF } from "react-icons/fa"
+import { BsTwitter, BsInstagram, BsYoutube } from "react-icons/bs"
+
 function Gallery() {
   return (
     <div className="gallery" id='gallery'>
@@ -12,31 +15,93 @@ function Gallery() {
         </div>
 
         <div className="gallery-cards">
-          <div className="card">
-            <img src={img} alt="" />
+
+          <div class="contain">
+            <div class="image">
+              <img src={img} />
+            </div>
+            <div class="content">
+              <div class="info">
+                <h2>
+                  Insurance Policies
+                </h2>
+                <span>Insurance</span>
+              </div>
+            </div>
           </div>
 
-          <div className="card">
-            <img src={img} alt="" />
+          <div class="contain">
+            <div class="image">
+              <img src={img} />
+            </div>
+            <div class="content">
+              <div class="info">
+                <h2>
+                  Insurance Policies
+                </h2>
+                <span>Insurance</span>
+              </div>
+            </div>
           </div>
 
-          <div className="card">
-            <img src={img} alt="" />
+          <div class="contain">
+            <div class="image">
+              <img src={img} />
+            </div>
+            <div class="content">
+              <div class="info">
+                <h2>
+                  Insurance Policies
+                </h2>
+                <span>Insurance</span>
+              </div>
+            </div>
           </div>
         </div>
 
 
         <div className="gallery-cards my-5">
-          <div className="card">
-            <img src={img} alt="" />
+
+          <div class="contain">
+            <div class="image">
+              <img src={img} />
+            </div>
+            <div class="content">
+              <div class="info">
+                <h2>
+                  Insurance Policies
+                </h2>
+                <span>Insurance</span>
+              </div>
+            </div>
           </div>
 
-          <div className="card">
-            <img src={img} alt="" />
+          <div class="contain">
+            <div class="image">
+              <img src={img} />
+            </div>
+            <div class="content">
+              <div class="info">
+                <h2>
+                  Insurance Policies
+                </h2>
+                <span>Insurance</span>
+              </div>
+            </div>
           </div>
 
-          <div className="card">
-            <img src={img} alt="" />
+          <div class="contain">
+            <div class="image">
+              <img src={img} />
+            </div>
+            <div class="content">
+              <div class="info">
+                <h2>
+                  Insurance Policies
+                </h2>
+                <span>Insurance</span>
+              </div>
+            </div>
           </div>
         </div>
       </div>
